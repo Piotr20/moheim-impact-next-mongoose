@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Image from "next/image";
-
 export default function AboutFront() {
   return (
     <section className="py-6 lg:py-16">
@@ -10,10 +7,10 @@ export default function AboutFront() {
           MOHEIM creates “new standard” to enrich your everyday life.
         </h2>
         <p className="mt-4 text-center">
-          The common denominator in MOHEIM's designs is minimalism and simplicity, and a desire to fit
-          smoothly into people's lives. We use traditional techniques and advanced technology to give shape to
-          our products with an ethical approach in line with the times. MOHEIM is a brand that creates "new
-          standards" to enrich the lives of those who own our products.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequatur sequi quos, ipsum, at ullam
+          sapiente rem cupiditate beatae praesentium ratione accusantium, accusamus corporis iste reiciendis
+          labore placeat atque neque. Doloribus aliquid tempora asperiores atque debitis assumenda reiciendis
+          ea non, odio aperiam neque sapiente id obcaecati provident cupiditate officia accusamus.
         </p>
         <button className="px-6 flex mx-auto py-1 mt-6 font-bold border-2 border-custom-black hover:bg-custom-black hover:text-white transition-colors duration-300">
           About
@@ -32,10 +29,11 @@ export default function AboutFront() {
               <span> enrich your everyday life.</span>
             </h2>
             <p className="my-4 lg:my-6 text-base lg:text-xl">
-              The common denominator in MOHEIM's designs is minimalism and simplicity, and a desire to fit
-              smoothly into people's lives. We use traditional techniques and advanced technology to give
-              shape to our products with an ethical approach in line with the times. MOHEIM is a brand that
-              creates "new standards" to enrich the lives of those who own our products.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequatur sequi quos, ipsum, at
+              ullam sapiente rem cupiditate beatae praesentium ratione accusantium, accusamus corporis iste
+              reiciendis labore placeat atque neque. Doloribus aliquid tempora asperiores atque debitis
+              assumenda reiciendis ea non, odio aperiam neque sapiente id obcaecati provident cupiditate
+              officia accusamus.
             </p>
             <button className="px-6 flex py-1 lg:px-8 mt-6 font-bold border-2 border-custom-black hover:bg-custom-black hover:text-white transition-colors duration-300">
               About

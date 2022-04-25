@@ -8,7 +8,7 @@ export default function Newsletter() {
 
   async function signForNewsletter(e) {
     e.preventDefault();
-    const res = await fetch("/api/pets", {
+    const res = await fetch("/api/newsletters", {
       method: "POST",
       headers: {
         Accept: "application/json",

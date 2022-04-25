@@ -1,5 +1,5 @@
-import dbConnect from "../../../lib/dbConnect";
-import Pet from "../../../models/Pet";
+import dbConnect from "../../../db/dbConnect";
+import Furniture from "../../../models/Furniture";
 
 export default async function handler(req, res) {
   const {
@@ -12,11 +12,11 @@ export default async function handler(req, res) {
   switch (method) {
     case "GET" /* Get a model by its ID */:
       try {
-        const pet = await Pet.findById(id);
-        if (!pet) {
+        const forniture = await Furniture.findById(id);
+        if (!forniture) {
           return res.status(400).json({ success: false });
         }
-        res.status(200).json({ success: true, data: pet });
+        res.status(200).json({ success: true, data: forniture });
       } catch (error) {
         res.status(400).json({ success: false });
       }
@@ -24,14 +24,14 @@ export default async function handler(req, res) {
 
     case "PUT" /* Edit a model by its ID */:
       try {
-        const pet = await Pet.findByIdAndUpdate(id, req.body, {
+        const forniture = await Furniture.findByIdAndUpdate(id, req.body, {
           new: true,
           runValidators: true,
         });
-        if (!pet) {
+        if (!forniture) {
           return res.status(400).json({ success: false });
         }
-        res.status(200).json({ success: true, data: pet });
+        res.status(200).json({ success: true, data: forniture });
       } catch (error) {
         res.status(400).json({ success: false });
       }
@@ -39,8 +39,8 @@ export default async function handler(req, res) {
 
     case "DELETE" /* Delete a model by its ID */:
       try {
-        const deletedPet = await Pet.deleteOne({ _id: id });
-        if (!deletedPet) {
+        const deletedFurniture = await Furniture.deleteOne({ _id: id });
+        if (!deletedFurniture) {
           return res.status(400).json({ success: false });
         }
         res.status(200).json({ success: true, data: {} });
